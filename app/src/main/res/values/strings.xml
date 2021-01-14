@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">cattest</string>
+
     <string name="main_title">나와 어울리는\n고양이</string>
+    <string name="question1">Q1. 간만의 휴일 당신은 무엇을<br/>하면서 시간을 보내시겠습니까?</string>
+    <string name="question2">Q2. 처음보는 사람을 만났을 때<br/>당신의 행동은?</string>
+    <string name="question3">Q3. 시험기간, 당신의 공부방식은?</string>
+    <string name="question4">Q4. 방 정리를 하다가 잘 쓰지<br/>않는 물건을 발견했을 때 이를<br/>처리하는 방법은?</string>
+    <string name="question5">Q5. 친구와 2박 3일 제주도<br/>여행을 가기로 했다. 계획을<br/>세우는 방법은?</string>
+    <string name="question6">Q6. 정해 둔 목표가 있을 때</string>
+    <string name="question7">Q7. 친구가 시험에 떨어졌다.<br/>이때 내가 친구에게 건널 말은?</string>
+    <string name="question8">Q8. 음식점을 고를 때 당신에게<br/>가장 중요하게 적용되는 기준은?</string>
+    <string name="question9">Q9. 당신이 팀프로젝트를 끝낸<br/>후 팀원들에게 듣고 싶은 말은?</string>
+    <string name="question10">Q10. 당신은 계획을 짤 때 어떤<br/>스타일을 선호합니까?</string>
+    <string name="question11">Q11. 회의에서 어떤 사람이라고<br/>평가받습니까?</string>
+    <string name="question12">Q12. 어떤 영화를 선호합니까?</string>
 </resources>
