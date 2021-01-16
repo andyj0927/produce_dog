@@ -35,7 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--알고리즘 제작 후 editText로 수정해 조건 별로 이미지 다르게 출력되게 해야함-->
+    <!--알고리즘 제작 후 조건 별로 이미지 다르게 출력되게 해야함-->
     <ImageView
         android:layout_width="269dp"
         android:layout_height="201dp"
