@@ -9,15 +9,16 @@
     <!--question part-->
     <string name="question1">Q1. 간만의 휴일 당신은 무엇을<br/>하면서 시간을 보내시겠습니까?</string>
     <string name="question2">Q2. 처음보는 사람을 만났을 때<br/>당신의 행동은?</string>
+
     <string name="question3">Q3. 시험기간, 당신의 공부방식은?</string>
-    <string name="question4">Q4. 방 정리를 하다가 잘 쓰지<br/>않는 물건을 발견했을 때 이를<br/>처리하는 방법은?</string>
-    <string name="question5">Q5. 친구와 2박 3일 제주도<br/>여행을 가기로 했다. 계획을<br/>세우는 방법은?</string>
+    <string name="question4">Q4. 방 정리를 하다가 잘 쓰지<br />않는 물건을 발견했을 때 이를<br />처리하는 방법은?</string>
+    <string name="question5">Q5. 친구와 2박 3일 제주도<br />여행을 가기로 했다. 계획을<br />세우는 방법은?</string>
     <string name="question6">Q6. 정해 둔 목표가 있을 때</string>
-    <string name="question7">Q7. 친구가 시험에 떨어졌다.<br/>이때 내가 친구에게 건널 말은?</string>
-    <string name="question8">Q8. 음식점을 고를 때 당신에게<br/>가장 중요하게 적용되는 기준은?</string>
-    <string name="question9">Q9. 당신이 팀프로젝트를 끝낸<br/>후 팀원들에게 듣고 싶은 말은?</string>
-    <string name="question10">Q10. 당신은 계획을 짤 때 어떤<br/>스타일을 선호합니까?</string>
-    <string name="question11">Q11. 회의에서 어떤 사람이라고<br/>평가받습니까?</string>
+    <string name="question7">Q7. 친구가 시험에 떨어졌다.<br />이때 내가 친구에게 건널 말은?</string>
+    <string name="question8">Q8. 음식점을 고를 때 당신에게<br />가장 중요하게 적용되는 기준은?</string>
+    <string name="question9">Q9. 당신이 팀프로젝트를 끝낸<br />후 팀원들에게 듣고 싶은 말은?</string>
+    <string name="question10">Q10. 당신은 계획을 짤 때 어떤<br />스타일을 선호합니까?</string>
+    <string name="question11">Q11. 회의에서 어떤 사람이라고<br />평가받습니까?</string>
     <string name="question12">Q12. 어떤 영화를 선호합니까?</string>
     <!--result part-->
     <string name="result_1_detail">현실적이고 책임감이 넘치는 당신.\n\n남들이 잊어버리는 사소한 것도 잘 기억하는 타입입니다.\n내성적이고 지적이며 충실한 브리티쉬 숏헤어와 잘 어울리네요!</string>
@@ -37,20 +38,21 @@
     <string name="result_15_detail">박학다식하고 통찰력이 뛰어나며, 다방면에 관심이 많은 당신.\n모험심이 강하며 자신의 가치관이 매우 뚜렷한 타입입니다.\n\n지루한 것을 싫어하며 장난스럽고, 주변을 탐험하는 데 관심이 많은 발리니즈와 잘 어울리네요.</string>
     <string name="result_16_detail">성취 가능한 도전에 매력을 느끼며 감정 표현에 있어 솔직한 당신.\n통솔력과 전략적 사고, 장기적인 안목을 모두 갖춘 지도자 타입입니다.\n\n영리하며 외향적이어서 집사에게 자신의 의견을 알리는 것을 좋아하는 샴고양이와 잘 어울리네요.</string>
 
-    <string name="result_1">'브리티쉬 숏헤어'</string>
-    <string name="result_2">'스라소니'</string>
-    <string name="result_3">'뱅갈'</string>
-    <string name="result_4">'드래곤 리'</string>
-    <string name="result_5">'러시안 블루'</string>
-    <string name="result_6">'버만'</string>
-    <string name="result_7">'싱가푸라'</string>
-    <string name="result_8">'통키니즈'</string>
-    <string name="result_9">'페르시안'</string>
-    <string name="result_10">'아나톨리안'</string>
-    <string name="result_11">'스핑크스'</string>
-    <string name="result_12">'저먼 렉스'</string>
-    <string name="result_13">'노르웨이 숲'</string>
-    <string name="result_14">'터키쉬 반'</string>
-    <string name="result_15">'발리니즈'</string>
-    <string name="result_16">'샴'</string>
+
+    <string name="result_1">"브리티쉬 숏헤어"</string>
+    <string name="result_2">"스라소니"</string>
+    <string name="result_3">"뱅갈"</string>
+    <string name="result_4">"드래곤 리"</string>
+    <string name="result_5">"러시안 블루"</string>
+    <string name="result_6">"버만"</string>
+    <string name="result_7">"싱가푸라"</string>
+    <string name="result_8">"통키니즈"</string>
+    <string name="result_9">"페르시안"</string>
+    <string name="result_10">"아나톨리안"</string>
+    <string name="result_11">"스핑크스"</string>
+    <string name="result_12">"저먼 렉스"</string>
+    <string name="result_13">"노르웨이 숲"</string>
+    <string name="result_14">"터키쉬 반"</string>
+    <string name="result_15">"발리니즈"</string>
+    <string name="result_16">"샴"</string>
 </resources>
