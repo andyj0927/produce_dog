@@ -12,6 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="127dp"
         android:layout_height="48dp"
+        android:fontFamily="@font/bazzi"
         android:text="@string/nick_check"
         android:textSize="30dp"
         tools:layout_editor_absoluteX="165dp"
@@ -45,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
+        android:fontFamily="@font/bazzi"
         android:text="@string/nick_title"
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,9 +56,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="317dp"
-        android:layout_height="39dp"
+        android:layout_width="254dp"
+        android:layout_height="26dp"
         android:layout_marginTop="200dp"
+        android:fontFamily="@font/bazzi"
         android:text="@string/nick_sub"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
