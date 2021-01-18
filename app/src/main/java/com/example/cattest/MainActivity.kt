@@ -5,10 +5,9 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
-    var catList = ArrayList<Cat>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_view_all)
+        setContentView(R.layout.activity_main)
 
     }
 }

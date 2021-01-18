@@ -55,4 +55,9 @@
     <string name="result_14">"터키쉬 반"</string>
     <string name="result_15">"발리니즈"</string>
     <string name="result_16">"샴"</string>
+    
+    <string name="all_1">#내성적 #현실적 \n#ISTJ #기억력갑</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
