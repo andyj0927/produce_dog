@@ -7,12 +7,75 @@
     android:background="@drawable/background"
     tools:context=".fragment.MainFragment">
 
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
-        android:text="@string/main_title"
+        android:layout_marginTop="684dp"
+        android:text="@string/main_start"
+        android:textSize="22dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:src="@drawable/main3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <ImageView
+        android:layout_width="356dp"
+        android:layout_height="344dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/main1"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <ImageView
+        android:layout_width="352dp"
+        android:layout_height="334dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/main2"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/main4"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/main5"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/main5"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:text="@string/main_title"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
