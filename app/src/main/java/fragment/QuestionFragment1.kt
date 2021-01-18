@@ -58,3 +58,37 @@ class QuestionFragment1 : Fragment() {
             }
     }
 }
+
+/* 알고리즘 부분 활용을 위한 임시 코딩
+lateinit var navController:NavController
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_question1, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
+        super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
+
+        btn_next.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        when(v?.id){
+            R.id.btn_next -> {
+                navController.navigate(R.id.action_question1Fragment_to_question2Fragment)
+            }
+            R.id.btn_option1_1 -> {
+                var user = algorithm(0,0,0,0)
+                user.incrementEi()
+            }
+        }
+        // 이부분들에서 각 버튼 누를 때마다 알고리즘 클래스 함수 사용하는 방법으로 구현하면 어떨까 함
+    }
+
+}
+*/
