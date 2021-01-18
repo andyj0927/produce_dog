@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cattest.Cat
 import com.example.cattest.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -20,7 +21,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class viewAllFragment : AppCompatActivity() {
-
+    var catList = ArrayList<Cat>()
 
 //    // TODO: Rename and change types of parameters
 //    private var param1: String? = null
