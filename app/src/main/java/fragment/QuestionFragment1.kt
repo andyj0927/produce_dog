@@ -59,7 +59,7 @@ class QuestionFragment1 : Fragment() {
     }
 }
 
-/* 알고리즘 부분 활용을 위한 임시 코딩
+
 lateinit var navController:NavController
 
     override fun onCreateView(
@@ -75,6 +75,7 @@ lateinit var navController:NavController
         navController = Navigation.findNavController(view)
 
         btn_next.setOnClickListener(this)
+        btn_back.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -82,13 +83,21 @@ lateinit var navController:NavController
             R.id.btn_next -> {
                 navController.navigate(R.id.action_question1Fragment_to_question2Fragment)
             }
+
+            R.id.btn_back -> {
+            navController.navigate(R.id.action_question1Fragment_to_mainFragment)
+            }
+
             R.id.btn_option1_1 -> {
+                var user = algorithm(1,0,0,0)
+                user.incrementEi()
+            }
+
+            R.id.btn_option1_2 -> {
                 var user = algorithm(0,0,0,0)
                 user.incrementEi()
             }
         }
-        // 이부분들에서 각 버튼 누를 때마다 알고리즘 클래스 함수 사용하는 방법으로 구현하면 어떨까 함
     }
 
-}
-*/
+
