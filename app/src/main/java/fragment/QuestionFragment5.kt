@@ -58,3 +58,42 @@ class QuestionFragment5 : Fragment() {
             }
     }
 }
+
+lateinit var navController:NavController
+
+override fun onCreateView(
+    inflater: LayoutInflater, container: ViewGroup?,
+    savedInstanceState: Bundle?
+): View? {
+    // Inflate the layout for this fragment
+    return inflater.inflate(R.layout.fragment_question5, container, false)
+}
+
+override fun onViewCreated(view: View, savedInstanceState: Bundle?){
+    super.onViewCreated(view, savedInstanceState)
+    navController = Navigation.findNavController(view)
+
+    btn_next.setOnClickListener(this)
+    btn_back.setOnClickListener(this)
+}
+
+override fun onClick(v: View?) {
+    when(v?.id){
+        R.id.btn_next -> {
+            navController.navigate(R.id.action_question5Fragment_to_question6Fragment)
+        }
+
+        R.id.btn_back -> {
+            navController.navigate(R.id.action_question5Fragment_to_question4Fragment)
+        }
+
+        R.id.btn_option5_1 -> {
+            var user = algorithm(0,0,0,0)
+            user.incrementEi()
+        }
+
+        R.id.btn_option5_2 -> {
+            var user = algorithm(0,0,0,1)
+            user.incrementEi()
+        }
+    }
