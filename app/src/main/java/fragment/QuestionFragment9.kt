@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cattest.R
 
-class QuestionFragment9 : Fragment() {
+class QuestionFragment9 : Fragment(), view.OnClickListener {
     var tmp = algorithm(0,0,0,0)
 
     lateinit var navController: NavController
