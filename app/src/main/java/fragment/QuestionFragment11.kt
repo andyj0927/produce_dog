@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.example.cattest.R
 
 class QuestionFragment11 : Fragment(), View.OnClickListener {
