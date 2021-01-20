@@ -26,24 +26,24 @@ class algorithm(var eiScore: Int, var snScore: Int, var tfScore: Int, var jpScor
     }
 
     public fun incrementEi(){
-        ei ++
+        ei ++ //높을 수록 e
     }
 
     public fun incrementSn(){
-        sn ++
+        sn ++ //높을 수록 s
     }
 
     public fun incrementTf(){
-        tf ++
+        tf ++ //높을 수록 t
     }
 
     public fun incrementJp() {
-        jp ++
+        jp ++ //높을 수록 j
     }
 
     public fun evaluateMBTI(): String {
         if(ei >= 2 && sn >= 2 && tf >= 2 && jp >= 2) {
-            return "ESTJ"// result fragment.kt 부분 옵션애 맞춰서 변경해주어야함
+            return "ESTJ" // result fragment.kt 부분을 해당 유형에 맞춰 변경하였음
         } else if (ei < 2 && sn >= 2 && tf >= 2 && jp >= 2) {
             return "ISTJ"
         } else if (ei < 2 && sn < 2 && tf >= 2 && jp >= 2) {
