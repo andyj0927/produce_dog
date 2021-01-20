@@ -1,10 +1,10 @@
 package com.junga.temptest.fragment
 
 class algorithm(var eiScore: Int, var snScore: Int, var tfScore: Int, var jpScore: Int) {
-    public var ei:Int = 0
-    public var sn:Int = 0
-    public var tf:Int = 0
-    public var jp:Int = 0
+    public var ei:Int = eiScore
+    public var sn:Int = snScore
+    public var tf:Int = tfScore
+    public var jp:Int = jpScore
 
     @JvmName("getEi1")
     public fun getEi() : Int{
