@@ -36,7 +36,7 @@ class viewAllFragment : AppCompatActivity() {
         val searchTerm = intent.getStringExtra("search_term")
         catlist = bundle?.getSerializable("photo_array_list") as ArrayList<Cat>
 
-        this.CatGridRecyclerViewAdapter =
+        //this.CatGridRecyclerViewAdapter =
     }
 
 
