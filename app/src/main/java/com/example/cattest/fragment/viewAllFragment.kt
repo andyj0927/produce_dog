@@ -21,16 +21,26 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class viewAllFragment : AppCompatActivity() {
-    var catList = ArrayList<Cat>()
+
 
 //    // TODO: Rename and change types of parameters
 //    private var param1: String? = null
 //    private var param2: String? = null
 //
+    private var catlist = ArrayList<Cat>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_view_all)
+
+        val bundle = intent.getBundleExtra("array_bundle")
+        val searchTerm = intent.getStringExtra("search_term")
+        catlist = bundle?.getSerializable("photo_array_list") as ArrayList<Cat>
+
+        this.CatGridRecyclerViewAdapter =
     }
+
+
+
 //
 //    override fun onCreateView(
 //        inflater: LayoutInflater, container: ViewGroup?,
