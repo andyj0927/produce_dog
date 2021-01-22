@@ -5,30 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.example.cattest.R
+import com.junga.temptest.fragment.algorithm
+import kotlinx.android.synthetic.main.fragment_question4.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [QuestionFragment4.newInstance] factory method to
- * create an instance of this fragment.
- */
-class QuestionFragment4 : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class QuestionFragment4 : Fragment(), View.OnClickListener {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    lateinit var navController: NavController
+
+    var user = algorithm(0, 0, 0, 0)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,62 +27,40 @@ class QuestionFragment4 : Fragment() {
         return inflater.inflate(R.layout.fragment_question4, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment QuestionFragment4.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            QuestionFragment4().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
+
+        btn_next.setOnClickListener(this)
+        btn_back.setOnClickListener(this)
+        option4_1.setOnClickListener(this)
+        option4_2.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.btn_next -> {
+                navController.navigate(R.id.action_question4Fragment_to_question5Fragment)
             }
-    }
-}
 
-lateinit var navController:NavController
+            R.id.btn_back -> {
+                navController.popBackStack()
+            }
 
-override fun onCreateView(
-    inflater: LayoutInflater, container: ViewGroup?,
-    savedInstanceState: Bundle?
-): View? {
-    // Inflate the layout for this fragment
-    return inflater.inflate(R.layout.fragment_question4, container, false)
-}
+            R.id.option4_1 -> {
+                var user = algorithm(0, 0, 0, 0)
+                user.incrementJp()
+            }
 
-override fun onViewCreated(view: View, savedInstanceState: Bundle?){
-    super.onViewCreated(view, savedInstanceState)
-    navController = Navigation.findNavController(view)
-
-    btn_next.setOnClickListener(this)
-    btn_back.setOnClickListener(this)
-}
-
-override fun onClick(v: View?) {
-    when(v?.id){
-        R.id.btn_next -> {
-            navController.navigate(R.id.action_question4Fragment_to_question5Fragment)
-        }
-
-        R.id.btn_back -> {
-            navController.navigate(R.id.action_question4Fragment_to_question3Fragment)
-        }
-
-        R.id.btn_option4_1 -> {
-            var user = algorithm(0,0,0,0)
-            user.incrementEi()
-        }
-
-        R.id.btn_option4_2 -> {
-            var user = algorithm(0,0,0,1)
-            user.incrementEi()
+            R.id.option4_2 -> {
+                var user = algorithm(0, 0, 0, 1)
+                user.incrementJp()
+            }
         }
     }
+
+    fun navigationWithIndex(index: Int) {
+        val bundle: Bundle = bundleOf("index" to index)
+        navController.navigate(R.id.action_questionFragment4_to_questionFragment5, bundle)
+    }
+}
