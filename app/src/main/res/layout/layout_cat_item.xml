@@ -2,7 +2,7 @@
 
 <androidx.cardview.widget.CardView
 xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
+
 android:layout_width="match_parent"
 android:layout_height="250dp"
 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -25,7 +25,7 @@ android:background="@drawable/background">
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/cat_name"
-        />
+        android:contentDescription= "@string/result_1"/>
 
     <TextView
         android:id="@+id/cat_name"
@@ -43,9 +43,9 @@ android:background="@drawable/background">
 
     <TextView
         android:id="@+id/cat_info"
-        android:fontFamily="@font/bazzi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/bazzi"
         android:gravity="center_horizontal"
         android:paddingBottom="10dp"
 
