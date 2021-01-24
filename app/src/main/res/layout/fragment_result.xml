@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".fragment.ResultFragment">
+    tools:context="fragment.ResultFragment">
 
     <!--추후 수정해서 닉네임 전달 받게 해야함-->
     <TextView
@@ -14,21 +15,25 @@
         android:layout_marginTop="72dp"
         android:gravity="center_horizontal"
         android:text="OO님과 어울리는 고양이"
-        android:textSize="24sp"
+        android:textSize="27dp"
+        android:textColor="@color/CustomGray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/bazzi"/>
 
     <TextView
         android:id="@+id/tv_main"
         android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="124dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/bazzi"
         android:gravity="center_horizontal"
         android:text="@string/result_1"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="45dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +52,7 @@
 
     <TextView
         android:id="@+id/tv_sub"
-        android:layout_width="350dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="@string/result_1_detail"
         android:textSize="25dp"
@@ -56,7 +61,8 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.63"
+        android:fontFamily="@font/bazzi" />
 
     <ImageView
         android:id="@+id/btn_ot"
@@ -67,19 +73,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_sub"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintVertical_bias="0.306" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/bazzi"
         android:text="다른유형 보러가기"
-        android:textSize="25dp"
+        android:textSize="32dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toEndOf="@+id/btn_ot"
         app:layout_constraintTop_toBottomOf="@+id/tv_sub"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.354" />
 
-    
+
 </androidx.constraintlayout.widget.ConstraintLayout>
