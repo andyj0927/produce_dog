@@ -13,7 +13,7 @@ import com.example.cattest.R
 
 class QuestionFragment7 : Fragment(), View.OnClickListener {
 
-    var tmp = algorithm(0,0,0,0)
+    var tmp = Algorithm(0,0,0,0)
 
     lateinit var navController: NavController
 
