@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/nickFragment"
-        android:name="com.example.cattest.fragment.NickFragment"
+        android:name="fragment.NickFragment"
         android:label="fragment_nick"
         tools:layout="@layout/fragment_nick" >
         <action
