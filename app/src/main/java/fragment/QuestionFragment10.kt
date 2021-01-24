@@ -13,7 +13,7 @@ import com.junga.temptest.fragment.algorithm
 import kotlinx.android.synthetic.main.fragment_question10.*
 
 class QuestionFragment10 : Fragment(), View.OnClickListener {
-    var tmp = algorithm(0,0,0,0)
+    var tmp = Algorithm(0,0,0,0)
 
     lateinit var navController: NavController
 

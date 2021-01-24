@@ -9,7 +9,7 @@ import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.cattest.R
-import com.junga.temptest.fragment.algorithm
+import com.junga.cattest.fragment.Algorithm
 import kotlinx.android.synthetic.main.fragment_question6.*
 
 
@@ -17,7 +17,7 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
 
     lateinit var navController: NavController
 
-    var user = algorithm(0, 0, 0, 0)
+    var user = Algorithm(0, 0, 0, 0)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,12 +48,12 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
             }
 
             R.id.option6_1 -> {
-                var user = algorithm(0, 0, 0, 1)
+                var user = Algorithm(0, 0, 0, 1)
                 user.incrementJp()
             }
 
             R.id.option6_2 -> {
-                var user = algorithm(0, 0, 0, 0)
+                var user = Algorithm(0, 0, 0, 0)
                 user.incrementJp()
             }
         }
