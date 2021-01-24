@@ -31,19 +31,19 @@ class QuestionFragment5 : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
 
-        btn_next.setOnClickListener(this)
-        btn_back.setOnClickListener(this)
+        next.setOnClickListener(this)
+        back.setOnClickListener(this)
         option5_1.setOnClickListener(this)
         option5_2.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.btn_next -> {
-                navController.navigate(R.id.action_question5Fragment_to_question6Fragment)
+            R.id.next -> {
+                navController.navigate(R.id.action_questionFragment5_to_questionFragment62)
             }
 
-            R.id.btn_back -> {
+            R.id.back -> {
                 navController.popBackStack()
             }
 
@@ -61,6 +61,6 @@ class QuestionFragment5 : Fragment(), View.OnClickListener {
 
     fun navigationWithIndex(index: Int) {
         val bundle: Bundle = bundleOf("index" to index)
-        navController.navigate(R.id.action_questionFragment5_to_questionFragment6, bundle)
+        navController.navigate(R.id.action_questionFragment5_to_questionFragment62, bundle)
     }
 }
