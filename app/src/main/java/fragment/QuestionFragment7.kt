@@ -44,7 +44,7 @@ class QuestionFragment7 : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v?.id){
-            R.id.btn_next -> {
+            R.id.next -> {
                 navController.navigate(R.id.action_questionFragment7_to_questionFragment8)
             }
             R.id.option7_1 -> {
@@ -54,7 +54,7 @@ class QuestionFragment7 : Fragment(), View.OnClickListener {
             R.id.option7_2 -> {
                 navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
             }
-            R.id.btn_back -> {
+            R.id.back -> {
                 navController.popBackStack()
             }
         }
