@@ -12,7 +12,7 @@ import com.example.cattest.R
 import com.junga.temptest.fragment.algorithm
 import kotlinx.android.synthetic.main.fragment_question9.*
 
-class QuestionFragment9 : Fragment(), view.OnClickListener {
+class QuestionFragment9 : Fragment(), View.OnClickListener {
     var tmp = algorithm(0,0,0,0)
 
     lateinit var navController: NavController

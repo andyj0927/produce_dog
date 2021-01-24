@@ -32,7 +32,7 @@ class ResultFragment : Fragment() {
         setResult(option)
 
         btn_ot.setOnClickListener{
-            navController.navigate(R.id.action_resultFragment_to_otherviewFragment)
+            navController.navigate(R.id.action_resultFragment_to_viewAllFragment)
         }
     }
 
