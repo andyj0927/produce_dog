@@ -9,9 +9,8 @@ import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.cattest.R
-import com.junga.cattest.fragment.Algorithm
+import com.junga.temptest.fragment.algorithm
 import kotlinx.android.synthetic.main.fragment_question12.*
-import kotlinx.android.synthetic.main.fragment_question6.*
 
 
 class QuestionFragment12 : Fragment(), View.OnClickListener {
@@ -28,7 +27,7 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
         tmp.sn = arguments?.getInt("Data2")?:-1
         tmp.tf = arguments?.getInt("Data3")?:-1
         tmp.jp = arguments?.getInt("Data4")?:-1
-        return inflater.inflate(R.layout.fragment_question12, container, false)
+        return inflater.inflate(R.layout.fragment_question11, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){

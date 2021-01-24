@@ -9,11 +9,13 @@ import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.cattest.R
-import com.junga.cattest.fragment.Algorithm
+import com.junga.cattest.fragment.algorithm
 import kotlinx.android.synthetic.main.fragment_question9.*
 
+
 class QuestionFragment9 : Fragment(), View.OnClickListener {
-    var tmp = Algorithm(0,0,0,0)
+    var tmp = algorithm(0,0,0,0)
+
 
     lateinit var navController: NavController
 
