@@ -24,7 +24,7 @@
         android:id="@+id/option1_1"
         android:layout_width="390dp"
         android:layout_height="120dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/question"
         android:gravity="center"
         android:text="친구를 만나 수다를 떤다"

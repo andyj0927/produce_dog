@@ -31,19 +31,19 @@ class QuestionFragment1 : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
 
-        btn_next.setOnClickListener(this)
-        btn_back.setOnClickListener(this)
+        next.setOnClickListener(this)
+        back.setOnClickListener(this)
         option1_1.setOnClickListener(this)
         option1_2.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.btn_next -> {
-                navController.navigate(R.id.action_question1Fragment_to_question2Fragment)
+            R.id.next -> {
+                navController.navigate(R.id.action_questionFragment1_to_questionFragment2)
             }
 
-            R.id.btn_back -> {
+            R.id.back -> {
                 navController.popBackStack()
             }
 
