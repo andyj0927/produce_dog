@@ -2,6 +2,7 @@ package com.example.cattest.fragment
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.text.Layout
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -20,26 +21,27 @@ private const val ARG_PARAM2 = "param2"
  * Use the [viewAllFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class viewAllFragment : AppCompatActivity() {
-    var catList = ArrayList<Cat>()
+class viewAllFragment : Fragment() {
 
-//    // TODO: Rename and change types of parameters
-//    private var param1: String? = null
-//    private var param2: String? = null
-//
+    private var catlist = ArrayList<Cat>()
+    private var param1: String? = null
+    private var param2: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_view_all)
+        arguments?.let {
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
+        }
     }
-//
-//    override fun onCreateView(
-//        inflater: LayoutInflater, container: ViewGroup?,
-//        savedInstanceState: Bundle?
-//    ): View? {
-//        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_view_all, container, false)
-//    }
-//
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_view_all,container,false)
+    }
+}
+
 //    companion object {
 //        /**
 //         * Use this factory method to create a new instance of
@@ -59,4 +61,3 @@ class viewAllFragment : AppCompatActivity() {
 //                }
 //            }
 //    }
-}

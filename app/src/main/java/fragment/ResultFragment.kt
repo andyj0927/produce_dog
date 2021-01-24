@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.junga.temptest.R
+import com.example.cattest.R
 import kotlinx.android.synthetic.main.fragment_result.*
 
 class ResultFragment : Fragment() {
 
-    var option = -1
+   var option = "cat"
 
     lateinit var navController: NavController
 
@@ -21,7 +21,7 @@ class ResultFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
 
-        option = arguments?.getInt("index")?:-1
+        option = arguments?.getString("Data")?:"cat"
 
         return inflater.inflate(R.layout.fragment_result, container, false)
     }
@@ -32,89 +32,89 @@ class ResultFragment : Fragment() {
         setResult(option)
 
         btn_ot.setOnClickListener{
-            navController.navigate(R.id.action_resultFragment_to_otherviewFragment)
+            navController.navigate(R.id.action_resultFragment_to_viewAllFragment)
         }
     }
 
-    fun setResult(option : Int){
+    fun setResult(option : String){
         val resultImage: ImageView = iv_main
         when(option){
-            1 -> {
+            "ISTJ" -> {
                 tv_main.text = "@string/result_1"
                 tv_sub.text = "@string/result_1_detail"
                 iv_main.setImageResource(R.drawable.britishshorthair)
             }
-            2 -> {
+            "ESTP" -> {
                 tv_main.text = "@string/result_2"
                 tv_sub.text = "@string/result_2_detail"
                 iv_main.setImageResource(R.drawable.srasony)
             }
-            3 -> {
+            "ISTP" -> {
                 tv_main.text = "@string/result_3"
                 tv_sub.text = "@string/result_3_detail"
                 iv_main.setImageResource(R.drawable.bangal)
             }
-            4 -> {
+            "ESTJ" -> {
                 tv_main.text = "@string/result_4"
                 tv_sub.text = "@string/result_4_detail"
                 iv_main.setImageResource(R.drawable.dragonlee)
             }
-            5 -> {
+            "INTJ" -> {
                 tv_main.text = "@string/result_5"
                 tv_sub.text = "@string/result_5_detail"
                 iv_main.setImageResource(R.drawable.rusianblue)
             }
-            6 -> {
+            "INTP" -> {
                 tv_main.text = "@string/result_6"
                 tv_sub.text = "@string/result_6_detail"
                 iv_main.setImageResource(R.drawable.buman)
             }
-            7 -> {
+            "ENTP" -> {
                 tv_main.text = "@string/result_7"
                 tv_sub.text = "@string/result_7_detail"
                 iv_main.setImageResource(R.drawable.singapula)
             }
-            8 -> {
+            "ENTJ" -> {
                 tv_main.text = "@string/result_8"
                 tv_sub.text = "@string/result_8_detail"
                 iv_main.setImageResource(R.drawable.tongkiniz)
             }
-            9 -> {
+            "INFJ" -> {
                 tv_main.text = "@string/result_9"
                 tv_sub.text = "@string/result_9_detail"
                 iv_main.setImageResource(R.drawable.persian)
             }
-            10 -> {
+            "ENFP" -> {
                 tv_main.text = "@string/result_10"
                 tv_sub.text = "@string/result_10_detail"
                 iv_main.setImageResource(R.drawable.anatolian)
             }
-            11 -> {
+            "INFP" -> {
                 tv_main.text = "@string/result_11"
                 tv_sub.text = "@string/result_11_detail"
                 iv_main.setImageResource(R.drawable.spingks)
             }
-            12 -> {
+            "ENFJ" -> {
                 tv_main.text = "@string/result_12"
                 tv_sub.text = "@string/result_12_detail"
                 iv_main.setImageResource(R.drawable.jamunlex)
             }
-            13 -> {
+            "ISFJ" -> {
                 tv_main.text = "@string/result_13"
                 tv_sub.text = "@string/result_13_detail"
                 iv_main.setImageResource(R.drawable.norwayshop)
             }
-            14 -> {
+            "ISFP" -> {
                 tv_main.text = "@string/result_14"
                 tv_sub.text = "@string/result_14_detail"
                 iv_main.setImageResource(R.drawable.turkishban)
             }
-            15 -> {
+            "ESFP" -> {
                 tv_main.text = "@string/result_15"
                 tv_sub.text = "@string/result_15_detail"
                 iv_main.setImageResource(R.drawable.baliniz)
             }
-            16 -> {
+            "ESFJ" -> {
                 tv_main.text = "@string/result_16"
                 tv_sub.text = "@string/result_16_detail"
                 iv_main.setImageResource(R.drawable.shiap)

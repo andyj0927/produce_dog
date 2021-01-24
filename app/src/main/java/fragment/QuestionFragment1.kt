@@ -5,30 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.example.cattest.R
+import com.junga.cattest.fragment.Algorithm
+import kotlinx.android.synthetic.main.fragment_question1.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [QuestionFragment1.newInstance] factory method to
- * create an instance of this fragment.
- */
-class QuestionFragment1 : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class QuestionFragment1 : Fragment(), View.OnClickListener {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    lateinit var navController: NavController
+
+    var user = Algorithm(0, 0, 0, 0)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,57 +27,43 @@ class QuestionFragment1 : Fragment() {
         return inflater.inflate(R.layout.fragment_question1, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment QuestionFragment1.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            QuestionFragment1().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
-}
-
-/* 알고리즘 부분 활용을 위한 임시 코딩
-lateinit var navController:NavController
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_question1, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
 
-        btn_next.setOnClickListener(this)
+        next.setOnClickListener(this)
+        back.setOnClickListener(this)
+        option1_1.setOnClickListener(this)
+        option1_2.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
-        when(v?.id){
-            R.id.btn_next -> {
-                navController.navigate(R.id.action_question1Fragment_to_question2Fragment)
+        when (v?.id) {
+            R.id.next -> {
+                navController.navigate(R.id.action_questionFragment1_to_questionFragment2)
             }
-            R.id.btn_option1_1 -> {
-                var user = algorithm(0,0,0,0)
+
+            R.id.back -> {
+                navController.popBackStack()
+            }
+
+            R.id.option1_1 -> {
+                var user = Algorithm(1, 0, 0, 0)
+                user.incrementEi()
+            }
+
+            R.id.option1_2 -> {
+                var user = Algorithm(0, 0, 0, 0)
                 user.incrementEi()
             }
         }
-        // 이부분들에서 각 버튼 누를 때마다 알고리즘 클래스 함수 사용하는 방법으로 구현하면 어떨까 함
     }
 
+    fun navigationWithIndex(index: Int) {
+        val bundle: Bundle = bundleOf("index" to index)
+        navController.navigate(R.id.action_questionFragment1_to_questionFragment2, bundle)
+    }
 }
-*/
+
+
+

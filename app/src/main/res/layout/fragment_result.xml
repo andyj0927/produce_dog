@@ -14,7 +14,7 @@
         android:layout_marginTop="72dp"
         android:gravity="center_horizontal"
         android:text="OO님과 어울리는 고양이"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
