@@ -9,7 +9,6 @@ import android.widget.ImageView
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.cattest.R
-import com.junga.temptest.R
 import kotlinx.android.synthetic.main.fragment_result.*
 
 class ResultFragment : Fragment() {
