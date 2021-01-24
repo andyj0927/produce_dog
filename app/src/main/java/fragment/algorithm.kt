@@ -1,10 +1,10 @@
-package com.junga.temptest.fragment
+package com.junga.cattest.fragment
 
-class algorithm(var eiScore: Int, var snScore: Int, var tfScore: Int, var jpScore: Int) {
-    public var ei:Int = eiScore
-    public var sn:Int = snScore
-    public var tf:Int = tfScore
-    public var jp:Int = jpScore
+open class Algorithm(var eiScore: Int, var snScore: Int, var tfScore: Int, var jpScore: Int) {
+    var ei:Int = eiScore
+    var sn:Int = snScore
+    var tf:Int = tfScore
+    var jp:Int = jpScore
 
     @JvmName("getEi1")
     public fun getEi() : Int{
