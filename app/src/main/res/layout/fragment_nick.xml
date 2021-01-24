@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="fragment.NickFragment">
+    tools:context=".fragment.NickFragment">
 
 
     <TextView
@@ -27,37 +27,18 @@
         tools:layout_editor_absoluteY="413dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@id/btn_next"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:src="@drawable/nick3"
         tools:layout_editor_absoluteX="83dp"
         tools:layout_editor_absoluteY="424dp" />
 
-    <Button
-        android:id="@+id/sendBtn"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:background="#00ff0000"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="424dp" />
-
     <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="383dp"
         android:layout_height="66dp"
         android:layout_marginStart="16dp"
         android:src="@drawable/nick1"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="285dp" />
-
-    <EditText
-        android:id="@+id/messageInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="285dp" />
 
