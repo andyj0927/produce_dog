@@ -9,7 +9,8 @@ import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.cattest.R
-import com.junga.cattest.fragment.algorithm
+import com.junga.cattest.fragment.Algorithm
+import kotlinx.android.synthetic.main.fragment_question12.*
 import kotlinx.android.synthetic.main.fragment_question6.*
 
 
@@ -27,7 +28,7 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
         tmp.sn = arguments?.getInt("Data2")?:-1
         tmp.tf = arguments?.getInt("Data3")?:-1
         tmp.jp = arguments?.getInt("Data4")?:-1
-        return inflater.inflate(R.layout.fragment_question11, container, false)
+        return inflater.inflate(R.layout.fragment_question12, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
@@ -44,7 +45,7 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.btn_next -> {
-                navController.navigate(R.id.action_questionFragment12_to_resultFragment)
+                navController.navigate(R.id.action_questionFragment12_to_nickFragment)
             }
             R.id.option12_1 -> {
                 tmp.incrementSn()
@@ -61,6 +62,6 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
 
     fun navigationWithData(data: String){
         val bundle: Bundle = bundleOf("Data" to data)
-        navController.navigate(R.id.action_questionFragment12_to_resultFragment, bundle)
+        navController.navigate(R.id.action_questionFragment12_to_nickFragment, bundle)
     }
 }

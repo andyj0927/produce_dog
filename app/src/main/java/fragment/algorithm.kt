@@ -16,7 +16,8 @@ open class Algorithm(var eiScore: Int, var snScore: Int, var tfScore: Int, var j
         return sn
     }
 
-    public fun setTf() : Int{
+    @JvmName("getTf1")
+    public fun getTf() : Int{
         return tf
     }
 
