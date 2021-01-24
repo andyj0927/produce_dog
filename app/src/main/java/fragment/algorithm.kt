@@ -16,7 +16,8 @@ class algorithm(var eiScore: Int, var snScore: Int, var tfScore: Int, var jpScor
         return sn
     }
 
-    public fun setTf() : Int{
+    @JvmName("getTf1")
+    public fun getTf() : Int{
         return tf
     }
 
