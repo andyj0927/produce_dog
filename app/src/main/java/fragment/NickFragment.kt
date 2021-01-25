@@ -35,7 +35,7 @@ class NickFragment : Fragment() {
 
         navController = Navigation.findNavController(view)
         btn_next.setOnClickListener {
-            navController.navigate(R.id.action_mainFragment_to_questionFragment1)
+            navController.navigate(R.id.action_nickFragment_to_resultFragment)
         }
     }
 
