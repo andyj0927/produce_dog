@@ -15,11 +15,13 @@
         android:fontFamily="@font/bazzi"
         android:text="@string/question9"
         android:textAlignment="center"
-        android:textSize="29dp"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/option9_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/option9_1"
@@ -87,13 +89,16 @@
     <TextView
         android:layout_width="80dp"
         android:layout_height="40dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/bazzi"
         android:gravity="center"
         android:text="9/12"
         android:textSize="20dp"
-        android:fontFamily="@font/bazzi"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/next"
-        app:layout_constraintStart_toEndOf="@+id/back"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_next"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.212" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
