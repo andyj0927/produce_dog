@@ -45,6 +45,7 @@
         android:gravity="center"
         android:text="창의적이고 독특한 의견을\n내는 사람"
         android:textSize="30dp"
+        android:fontFamily="@font/bazzi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
