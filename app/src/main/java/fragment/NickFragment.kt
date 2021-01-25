@@ -4,13 +4,13 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.cattest.Communicator
 import com.example.cattest.R
+import kotlinx.android.synthetic.main.fragment_nick.*
 import kotlinx.android.synthetic.main.fragment_nick.view.*
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import kotlinx.android.synthetic.main.fragment_main.*
 
 
 class NickFragment : Fragment() {
