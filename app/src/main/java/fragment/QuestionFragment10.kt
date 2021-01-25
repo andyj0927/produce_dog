@@ -9,7 +9,7 @@ import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.cattest.R
-import com.example.cattest.fragment.Algorithm
+import com.junga.cattest.fragment.Algorithm
 import kotlinx.android.synthetic.main.fragment_question10.*
 
 class QuestionFragment10 : Fragment(), View.OnClickListener {
