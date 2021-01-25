@@ -44,7 +44,7 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.btn_next -> {
-                navController.navigate(R.id.action_questionFragment12_to_nickFragment)
+                navController.navigate(R.id.action_questionFragment12_to_nickFragment2)
             }
             R.id.option12_1 -> {
                 tmp.incrementSn()
@@ -61,6 +61,6 @@ class QuestionFragment12 : Fragment(), View.OnClickListener {
 
     fun navigationWithData(data: String){
         val bundle: Bundle = bundleOf("Data" to data)
-        navController.navigate(R.id.action_questionFragment12_to_nickFragment, bundle)
+        navController.navigate(R.id.action_questionFragment12_to_nickFragment2, bundle)
     }
 }
