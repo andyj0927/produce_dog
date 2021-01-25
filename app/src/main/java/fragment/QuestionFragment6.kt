@@ -17,7 +17,7 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
 
     lateinit var navController: NavController
 
-    var user = Algorithm(0, 0, 0, 0)
+    var tmp = Algorithm(0, 0, 0, 0)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,6 +25,11 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_question6, container, false)
+
+        tmp.ei = arguments?.getInt("Data1")?:-1
+        tmp.sn = arguments?.getInt("Data2")?:-1
+        tmp.tf = arguments?.getInt("Data3")?:-1
+        tmp.jp = arguments?.getInt("Data4")?:-1
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -48,19 +53,19 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
             }
 
             R.id.option6_1 -> {
-                var user = Algorithm(0, 0, 0, 1)
-                user.incrementJp()
+                Algorithm(0, 0, 0, 1)
+                navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
             }
 
             R.id.option6_2 -> {
-                var user = Algorithm(0, 0, 0, 0)
-                user.incrementJp()
+                Algorithm(0, 0, 0, 0)
+                navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
             }
         }
     }
 
-    fun navigationWithIndex(index: Int) {
-        val bundle: Bundle = bundleOf("index" to index)
+    fun navigationWithData(data1: Int, data2: Int, data3: Int, data4: Int) {
+        val bundle: Bundle = bundleOf("Data1" to data1, "Data2" to data2, "Data3" to data3, "Data4" to data4)
         navController.navigate(R.id.action_questionFragment62_to_questionFragment7, bundle)
     }
 }
