@@ -47,17 +47,8 @@
         android:label="fragment_question12"
         tools:layout="@layout/fragment_question12" >
         <action
-            android:id="@+id/action_questionFragment12_to_nickFragment"
-            app:destination="@id/nickFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/nickFragment"
-        android:name="fragment.NickFragment"
-        android:label="fragment_nick"
-        tools:layout="@layout/fragment_nick" >
-        <action
-            android:id="@+id/action_nickFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            android:id="@+id/action_questionFragment12_to_nickFragment2"
+            app:destination="@id/nickFragment2" />
     </fragment>
     <fragment
         android:id="@+id/questionFragment9"
@@ -136,11 +127,20 @@
             app:destination="@id/questionFragment7" />
     </fragment>
     <fragment
-        android:id="@+id/resultFragment"
-        android:name="com.junga.cattest.fragment.ResultFragment"
-        android:label="ResultFragment" >
+        android:id="@+id/resultFragment2"
+        android:name="fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
         <action
-            android:id="@+id/action_resultFragment_to_viewAllFragment"
+            android:id="@+id/action_resultFragment2_to_viewAllFragment"
             app:destination="@id/viewAllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nickFragment2"
+        android:name="com.example.cattest.fragment.NickFragment"
+        android:label="NickFragment" >
+        <action
+            android:id="@+id/action_nickFragment2_to_resultFragment2"
+            app:destination="@id/resultFragment2" />
     </fragment>
 </navigation>
