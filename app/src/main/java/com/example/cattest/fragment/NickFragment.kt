@@ -36,7 +36,4 @@ class NickFragment : Fragment() {
     //      navController.navigate(R.id.action_nickFragment2_to_resultFragment2, bundle)
         }
     }
-
-
 }
-
