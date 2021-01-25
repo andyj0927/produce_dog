@@ -10,6 +10,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/bazzi"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="@string/question7"
@@ -27,6 +28,7 @@
         android:layout_marginTop="204dp"
         android:background="@drawable/question"
         android:gravity="center"
+        android:fontFamily="@font/bazzi"
         android:text="무슨 시험인데? 몇 점인데?"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,6 +86,7 @@
     <TextView
         android:layout_width="80dp"
         android:layout_height="40dp"
+        android:fontFamily="@font/bazzi"
         android:gravity="center"
         android:text="7/12"
         android:textSize="20dp"
