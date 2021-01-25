@@ -7,8 +7,8 @@
     <string name="nick_sub">닉네임을 입력하고 결과를 확인하세요</string>
     <string name="nick_check">확인하기</string>
     <!--question part-->
-    <string name="question1">Q1. 간만의 휴일 당신은 무엇을<br/>하면서 시간을 보내시겠습니까?</string>
-    <string name="question2">Q2. 처음보는 사람을 만났을 때<br/>당신의 행동은?</string>
+    <string name="question1">Q1. 간만의 휴일 당신은 무엇을<br />하면서 시간을 보내시겠습니까?</string>
+    <string name="question2">Q2. 처음보는 사람을 만났을 때<br />당신의 행동은?</string>
     <string name="question3">Q3. 시험기간, 당신의 공부방식은?</string>
     <string name="question4">Q4. 방 정리를 하다가 잘 쓰지<br />않는 물건을 발견했을 때 이를<br />처리하는 방법은?</string>
     <string name="question5">Q5. 친구와 2박 3일 제주도<br />여행을 가기로 했다. 계획을<br />세우는 방법은?</string>
