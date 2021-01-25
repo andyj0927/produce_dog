@@ -45,6 +45,7 @@
         android:gravity="center"
         android:text="수고했어. 역시 넌 최고야"
         android:textSize="30dp"
+        android:fontFamily="@font/bazzi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
