@@ -12,7 +12,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_main.*
 
-
+/*
 class NickFragment : Fragment() {
     lateinit var navController: NavController
     private lateinit var communicator: Communicator
@@ -39,4 +39,4 @@ class NickFragment : Fragment() {
         }
     }
 
-}
+}*/
