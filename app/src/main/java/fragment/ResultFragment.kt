@@ -36,6 +36,7 @@ class ResultFragment : Fragment() {
 class ResultFragment : Fragment() {
 
     var option = "cat"
+//    var displayMessage: String? = ""
 
     lateinit var navController: NavController
 
@@ -44,6 +45,7 @@ class ResultFragment : Fragment() {
         // Inflate the layout for this fragment
 
         option = arguments?.getString("Data")?:"cat"
+//        displayMessage = arguments?.getString("message")
 
         return inflater.inflate(R.layout.fragment_result, container, false)
     }
@@ -52,13 +54,14 @@ class ResultFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
         setResult(option)
+//        user_name.text=displayMessage
 
         btn_ot.setOnClickListener{
             navController.navigate(R.id.action_resultFragment2_to_viewAllFragment)
         }
     }
 
-    fun setResult(option : String){
+    private fun setResult(option : String){
         val resultImage: ImageView = iv_main
         when(option){
             "ISTJ" -> {
