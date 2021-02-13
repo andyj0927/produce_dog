@@ -3,8 +3,7 @@
     <string name="app_name">cattest</string>
     <string name="main_title">나와 어울리는\n"                     "고양이</string>
     <string name="main_start">시작하기</string>
-    <string name="nick_title">당신의 닉네임은 무엇인가요?</string>
-    <string name="nick_sub">닉네임을 입력하고 결과를 확인하세요</string>
+    <string name="nick_title">결과를 확인하세요.</string>
     <string name="nick_check">확인하기</string>
     <!--question part-->
     <string name="question1">Q1. 간만의 휴일 당신은 무엇을<br />하면서 시간을 보내시겠습니까?</string>
