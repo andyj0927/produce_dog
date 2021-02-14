@@ -11,27 +11,7 @@ import androidx.navigation.Navigation
 import com.example.cattest.R
 import kotlinx.android.synthetic.main.fragment_result.*
 
-/*닉네임 출력 부분
-class ResultFragment : Fragment() {
 
-    var displayMessage: String? = ""
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_nick, container, false)
-
-        displayMessage = arguments?.getString("message")
-
-        view.displayMessage.text = displayMessage
-
-        return view
-    }
-
-}
-*/
 
 class ResultFragment : Fragment() {
 
