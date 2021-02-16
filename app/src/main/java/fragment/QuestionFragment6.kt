@@ -24,12 +24,12 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_question6, container, false)
-
         tmp.ei = arguments?.getInt("Data1")?:-1
         tmp.sn = arguments?.getInt("Data2")?:-1
         tmp.tf = arguments?.getInt("Data3")?:-1
         tmp.jp = arguments?.getInt("Data4")?:-1
+
+        return inflater.inflate(R.layout.fragment_question6, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -45,7 +45,7 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.next -> {
-                navController.navigate(R.id.action_questionFragment62_to_questionFragment7)
+                navController.navigate(R.id.action_questionFragment6_to_questionFragment7)
             }
 
             R.id.back -> {
@@ -67,6 +67,6 @@ class QuestionFragment6 : Fragment(), View.OnClickListener {
 
     fun navigationWithData(data1: Int, data2: Int, data3: Int, data4: Int) {
         val bundle: Bundle = bundleOf("Data1" to data1, "Data2" to data2, "Data3" to data3, "Data4" to data4)
-        navController.navigate(R.id.action_questionFragment62_to_questionFragment7, bundle)
+        navController.navigate(R.id.action_questionFragment6_to_questionFragment7, bundle)
     }
 }

@@ -24,12 +24,12 @@ class QuestionFragment3 : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_question3, container, false)
-
         tmp.ei = arguments?.getInt("Data1")?:-1
         tmp.sn = arguments?.getInt("Data2")?:-1
         tmp.tf = arguments?.getInt("Data3")?:-1
         tmp.jp = arguments?.getInt("Data4")?:-1
+
+        return inflater.inflate(R.layout.fragment_question3, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
