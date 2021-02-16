@@ -53,12 +53,12 @@ class QuestionFragment4 : Fragment(), View.OnClickListener {
             }
 
             R.id.option4_1 -> {
-                tmp.incrementJp()
                 //Algorithm(0, 0, 0, 0)
                 navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
             }
 
             R.id.option4_2 -> {
+                tmp.incrementJp()
                 //Algorithm(0, 0, 0, 1)
                 navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
             }
