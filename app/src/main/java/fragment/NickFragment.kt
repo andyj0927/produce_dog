@@ -39,6 +39,6 @@ class NickFragment : Fragment(){
 
     fun navigationWithData(data: String){
         val bundle: Bundle = bundleOf("Data" to data)
-        navController.navigate(R.id.action_nickFragment_to_resultFragment22, bundle)
+        navController.navigate(R.id.action_nickFragment2_to_resultFragment2, bundle)
     }
 }
