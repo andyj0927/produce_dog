@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_viewAllFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_viewAllFragment_to_resultFragment2"
+            app:destination="@id/resultFragment2" />
     </fragment>
     <fragment
         android:id="@+id/questionFragment10"
@@ -58,7 +61,7 @@
         tools:layout="@layout/fragment_question12" >
         <action
             android:id="@+id/action_questionFragment12_to_nickFragment2"
-            app:destination="@id/nickFragment2" />
+            app:destination="@id/nickFragment" />
     </fragment>
     <fragment
         android:id="@+id/questionFragment9"
@@ -125,15 +128,15 @@
         android:name="fragment.QuestionFragment5"
         android:label="QuestionFragment5" >
         <action
-            android:id="@+id/action_questionFragment5_to_questionFragment62"
-            app:destination="@id/questionFragment62" />
+            android:id="@+id/action_questionFragment5_to_questionFragment6"
+            app:destination="@id/questionFragment6" />
     </fragment>
     <fragment
-        android:id="@+id/questionFragment62"
+        android:id="@+id/questionFragment6"
         android:name="fragment.QuestionFragment6"
         android:label="QuestionFragment6" >
         <action
-            android:id="@+id/action_questionFragment62_to_questionFragment7"
+            android:id="@+id/action_questionFragment6_to_questionFragment7"
             app:destination="@id/questionFragment7" />
     </fragment>
     <fragment
@@ -146,11 +149,12 @@
             app:destination="@id/viewAllFragment" />
     </fragment>
     <fragment
-        android:id="@+id/nickFragment2"
-        android:name="com.example.cattest.fragment.NickFragment"
-        android:label="NickFragment" >
+        android:id="@+id/nickFragment"
+        android:name="fragment.NickFragment"
+        android:label="fragment_nick"
+        tools:layout="@layout/fragment_nick" >
         <action
-            android:id="@+id/action_nickFragment2_to_resultFragment2"
+            android:id="@+id/action_nickFragment_to_resultFragment22"
             app:destination="@id/resultFragment2" />
     </fragment>
 </navigation>
