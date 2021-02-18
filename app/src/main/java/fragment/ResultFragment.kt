@@ -11,8 +11,6 @@ import androidx.navigation.Navigation
 import com.example.cattest.R
 import kotlinx.android.synthetic.main.fragment_result.*
 
-
-
 class ResultFragment : Fragment() {
 
     var option = "cat"
@@ -41,9 +39,9 @@ class ResultFragment : Fragment() {
         }
     }
 
-    private fun setResult(option : String){
+    private fun setResult(type_c : String){
 
-        when(option){
+        when(type_c){
             "ISTJ" -> {
                 tv_main.text = "브리티쉬 숏헤어"
                 tv_sub.text = "현실적이고 책임감 넘치는 당신.\n남들이 잊어버리는 사소한 것도 잘 기억하는 타입입니다.\n\n내성적이고 지적이며 충실한 브리티쉬 숏헤어와 잘 어울리네요!"
