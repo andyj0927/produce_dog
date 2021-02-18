@@ -24,12 +24,12 @@ class QuestionFragment1 : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_question1, container, false)
-
         tmp.ei = arguments?.getInt("Data1")?:-1
         tmp.sn = arguments?.getInt("Data2")?:-1
         tmp.tf = arguments?.getInt("Data3")?:-1
         tmp.jp = arguments?.getInt("Data4")?:-1
+
+        return inflater.inflate(R.layout.fragment_question1, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -47,17 +47,14 @@ class QuestionFragment1 : Fragment(), View.OnClickListener {
             R.id.next -> {
                 navController.navigate(R.id.action_questionFragment1_to_questionFragment2)
             }
-
             R.id.back -> {
                 navController.popBackStack()
             }
-
             R.id.option1_1 -> {
                 tmp.incrementEi()
                 //Algorithm(1, 0, 0, 0)
                 navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
             }
-
             R.id.option1_2 -> {
                 //Algorithm(0, 0, 0, 0)
                 navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
@@ -70,6 +67,3 @@ class QuestionFragment1 : Fragment(), View.OnClickListener {
         navController.navigate(R.id.action_questionFragment1_to_questionFragment2, bundle)
     }
 }
-
-
-
