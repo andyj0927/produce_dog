@@ -12,7 +12,6 @@ import com.example.cattest.R
 import com.junga.cattest.fragment.Algorithm
 import kotlinx.android.synthetic.main.fragment_question3.*
 
-
 class QuestionFragment3 : Fragment(), View.OnClickListener {
 
     lateinit var navController: NavController
