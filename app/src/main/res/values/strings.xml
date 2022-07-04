@@ -1,7 +1,7 @@
 <resources>
     <!--main part-->
-    <string name="app_name">cattest</string>
-    <string name="main_title">나와 어울리는\n"                     "고양이</string>
+    <string name="app_name">producedog</string>
+    <string name="main_title">나와 어울리는\n"                     "강아지</string>
     <string name="main_start">시작하기</string>
     <string name="nick_title">결과를 확인하세요.</string>
     <string name="nick_check">확인하기</string>

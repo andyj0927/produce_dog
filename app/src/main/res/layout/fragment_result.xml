@@ -17,7 +17,7 @@
         android:layout_marginTop="84dp"
         android:fontFamily="@font/bazzi"
         android:gravity="center_horizontal"
-        android:text="당신과 어울리는 고양이는"
+        android:text="당신과 어울리는 강아지는"
         android:textColor="@color/CustomGray"
         android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
