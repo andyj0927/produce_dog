@@ -11,27 +11,15 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.cattest.fragment.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment_to_questionFragment1"
+            android:id="@+id/action_loginFragment_to_questionFragment1"
             app:destination="@id/questionFragment1" />
     </fragment>
+
     <fragment
         android:id="@+id/viewAllFragment"
         android:name="com.example.cattest.fragment.viewAllFragment"
         android:label="fragment_view_all"
         tools:layout="@layout/fragment_view_all" >
-        <action
-            android:id="@+id/action_viewAllFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
         <action
             android:id="@+id/action_viewAllFragment_to_resultFragment2"
             app:destination="@id/resultFragment2" />

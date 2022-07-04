@@ -31,7 +31,7 @@ class viewAllFragment : Fragment() {
 
         navController = Navigation.findNavController(view)
         btn_home.setOnClickListener {
-            navController.navigate(R.id.action_viewAllFragment_to_mainFragment)
+            //navController.navigate(R.id.action_viewAllFragment_to_mainFragment)
         }
         var myAdapter = CatGridRecyclerViewAdapter(view.context)
         mDatas.add(Cat(R.drawable.britishshorthair,"브리티쉬 숏헤어","#내성적       #현실적\n#ISTJ         #기억력갑"))
