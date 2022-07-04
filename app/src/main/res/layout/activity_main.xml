@@ -38,6 +38,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv_main"
         app:menu="@menu/menu"
+        android:background="@drawable/dfdds"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
