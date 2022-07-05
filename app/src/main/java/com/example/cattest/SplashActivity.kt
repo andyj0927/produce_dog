@@ -10,6 +10,7 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash)
 
         Handler().postDelayed({ //delay를 위한 handler
             startActivity(Intent(this, MainActivity::class.java))

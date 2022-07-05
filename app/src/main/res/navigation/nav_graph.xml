@@ -16,15 +16,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/viewAllFragment"
-        android:name="com.example.cattest.fragment.viewAllFragment"
-        android:label="fragment_view_all"
-        tools:layout="@layout/fragment_view_all" >
-        <action
-            android:id="@+id/action_viewAllFragment_to_resultFragment2"
-            app:destination="@id/resultFragment2" />
-    </fragment>
-    <fragment
         android:id="@+id/questionFragment10"
         android:name="fragment.QuestionFragment10"
         android:label="fragment_question10"
@@ -133,8 +124,8 @@
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action
-            android:id="@+id/action_resultFragment2_to_viewAllFragment"
-            app:destination="@id/viewAllFragment" />
+            android:id="@+id/action_resultFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/nickFragment2"
