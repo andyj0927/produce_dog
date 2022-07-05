@@ -4,6 +4,7 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/splash_icon" /> <!--app logo-->
+            android:src="@drawable/produce"
+            /> <!--app logo-->
     </item>
 </layer-list>
