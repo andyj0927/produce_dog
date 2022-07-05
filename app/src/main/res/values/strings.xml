@@ -20,7 +20,7 @@
     <string name="question11">Q11. 회의에서 어떤 사람이라고<br />평가받습니까?</string>
     <string name="question12">Q12. 어떤 영화를 선호합니까?\n</string>
     <!--result part-->
-    <string name="result_1_detail">현실적이고 책임감 넘치는 당신.<br /><br />남들이 잊어버리는 사소한 것도 잘 기억하는 타입입니다.<br />내성적이고 지적이며 충실한 브리티쉬 숏헤어와 잘 어울리네요!</string>
+    <string name="result_1_detail">귀차나즘 넘치는 당신.<br /><br />선택지를 선택하지 않으셨군요<br />다시 차분하게 선택해주세요</string>
 <!--    <string name="result_2_detail">과묵하고 분석적인 당신.<br /><br />적응력이 강하고 효율적으로 행동하며 독립적인 타입입니다.<br />개인적이고 지능적이며 신중한 스라소니와 잘 어울리네요!</string>-->
 <!--    <string name="result_3_detail">자신감 넘치고 엄청난 활동성을 자랑하는 당신. 남들에 비해 다양한 것들을 쉽게 배우는 타입입니다.<br /><br />똑똑하고 호기심이 많아 새로운 것에 대한 관심이 많은 뱅갈 고양이와 잘 어울리네요!</string>-->
 <!--    <string name="result_4_detail">체계적으로 일하고 규칙을 준수하는 당신. 기억력도 좋고 활동성이 있어 사업가의 자질이 다분합니다.<br /><br />똑똑하고 친근하며 책임감 넘치는 드래곤 리와 잘 어울리네요!</string>-->
@@ -38,7 +38,7 @@
 <!--    <string name="result_16_detail">성취 가능한 도전에 매력을 느끼며 감정 표현에 있어 솔직한 당신.<br />통솔력과 전략적 사고, 장기적인 안목을 모두 갖춘 지도자 타입입니다.<br /><br />영리하며 외향적이어서 집사에게 자신의 의견을 알리는 것을 좋아하는 샴고양이와 잘 어울리네요.</string>-->
 
 
-    <string name="result_1">브리티쉬 숏헤어</string>
+    <string name="result_1">제대로 선택하세요!</string>
 <!--    <string name="result_2">"스라소니"</string>-->
 <!--    <string name="result_3">"뱅갈"</string>-->
 <!--    <string name="result_4">"드래곤 리"</string>-->
