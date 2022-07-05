@@ -30,7 +30,7 @@ class NickFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navController = Navigation.findNavController(view)
-        btn_next.setOnClickListener {
+        next.setOnClickListener {
     //        val bundle: Bundle = bundleOf("Data" to data)
             navController.navigate(R.id.action_nickFragment2_to_resultFragment2)
     //      navController.navigate(R.id.action_nickFragment2_to_resultFragment2, bundle)
