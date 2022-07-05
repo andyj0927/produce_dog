@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/back"
     tools:context="fragment.QuestionFragment1">
 
     <TextView
@@ -12,12 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="@string/question1"
         android:textAlignment="center"
         android:textSize="29dp"
-        android:fontFamily="@font/bazzi"
+        android:fontFamily="@font/gulim"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintBottom_toTopOf="@id/option1_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,53 +27,61 @@
         android:id="@+id/option1_1"
         android:layout_width="390dp"
         android:layout_height="120dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/question"
+        android:background="@drawable/bubble1"
+
+        android:fontFamily="@font/gulim"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
         android:gravity="center"
         android:text="친구를 만나 수다를 떤다"
         android:textSize="30dp"
-        android:fontFamily="@font/bazzi"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintBottom_toTopOf="@id/option1_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <TextView
         android:id="@+id/option1_2"
         android:layout_width="390dp"
         android:layout_height="120dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/question"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bubblebubble"
+        android:fontFamily="@font/gulim"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:gravity="center"
         android:text="집에서 혼자 시간을 보낸다"
         android:textSize="30dp"
-        android:fontFamily="@font/bazzi"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option1_1" />
+        app:layout_constraintTop_toBottomOf="@id/option1_1" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="350dp"
         android:layout_height="100dp"
-        android:layout_marginTop="524dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/loading1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/option1_2" />
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/bazzi"
+        android:gravity="center"
+        android:text="1/12"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        />
 
     <ImageView
         android:id="@+id/next"
@@ -80,20 +90,19 @@
         android:layout_marginTop="10dp"
         android:src="@drawable/next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="1/12"
-        android:textSize="20sp"
-        android:fontFamily="@font/bazzi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/next"
-        app:layout_constraintStart_toEndOf="@+id/back"
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
