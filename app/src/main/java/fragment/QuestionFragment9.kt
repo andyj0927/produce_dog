@@ -58,7 +58,7 @@ class QuestionFragment9 : Fragment(), View.OnClickListener {
                 navController.popBackStack()
             }
         }
-        // 이부분들에서 각 버튼 누를 때마다 그 알고리즘 함수 사용해서 함
+
     }
 
     fun navigationWithData(data1: Int, data2: Int, data3: Int, data4: Int){
