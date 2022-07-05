@@ -1,98 +1,107 @@
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context="fragment.QuestionFragment1">
+    android:orientation="vertical"
+    tools:context="fragment.QuestionFragment6">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
         android:text="@string/question6"
         android:textAlignment="center"
-        android:textSize="29dp"
-
-        app:layout_constraintBottom_toTopOf="@id/option6_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="25dp"
+        />
 
     <TextView
         android:id="@+id/option6_1"
-        android:layout_width="390dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:layout_margin="10dp"
         android:background="@drawable/bubble1"
         android:gravity="center"
         android:text="한 번 세운 목표는 웬만하면\n바꾸지 않는다"
-        android:textSize="30dp"
+        android:textSize="25dp"
 
-        app:layout_constraintBottom_toTopOf="@id/option6_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        />
 
     <TextView
         android:id="@+id/option6_2"
-        android:layout_width="390dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:layout_margin="10dp"
         android:background="@drawable/bubble2"
         android:gravity="center"
         android:text="목표는 상황에 따라\n유동적으로 바뀔 수 있다고\n생각한다"
         android:textSize="25dp"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option6_1" />
+
+        />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="40dp"
+
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:src="@drawable/loading6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/option6_2" />
+        />
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/next"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
 
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="6/12"
-        android:textSize="20dp"
-        android:fontFamily="@font/bazzi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/next"
-        app:layout_constraintStart_toEndOf="@+id/back"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            android:src="@drawable/back"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gulim"
+            android:gravity="center"
+            android:text="6/12"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/next"
+            />
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>
+

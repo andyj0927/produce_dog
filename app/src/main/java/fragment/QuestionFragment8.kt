@@ -33,16 +33,16 @@ class QuestionFragment8 : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
 
-        btn_next.setOnClickListener(this)
+        next.setOnClickListener(this)
         option8_1.setOnClickListener(this)
         option8_2.setOnClickListener(this)
-        btn_back.setOnClickListener(this)
+        back.setOnClickListener(this)
 
     }
 
     override fun onClick(v: View?) {
         when(v?.id){
-            R.id.btn_next -> {
+            R.id.next -> {
                 navController.navigate(R.id.action_questionFragment8_to_questionFragment9)
             }
             R.id.option8_1 -> {
@@ -52,7 +52,7 @@ class QuestionFragment8 : Fragment(), View.OnClickListener {
             R.id.option8_2 -> {
                 navigationWithData(tmp.getEi(), tmp.getSn(), tmp.getTf(), tmp.getJp())
             }
-            R.id.btn_back -> {
+            R.id.back -> {
                 navController.popBackStack()
             }
         }
