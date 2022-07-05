@@ -1,5 +1,6 @@
 # 프로듀스 멍멍
 ##### 다양한 강아지의 정보를 얻고 당신에게 맞는 강아지를 찾을 수 있는 귀여운 프로듀스 멍멍이에요!
+![Screenshot_20220705-201148](https://user-images.githubusercontent.com/66019792/177316360-f8dc7abe-68c7-4e8f-bebb-ca041f87bbaf.jpg)
 ---------------------
 ### 팀원
 KAIST 전산학부 정영훈
