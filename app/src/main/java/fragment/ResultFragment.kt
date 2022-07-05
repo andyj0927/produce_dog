@@ -35,7 +35,7 @@ class ResultFragment : Fragment() {
 //        user_name.text=displayMessage
 
         btn_ot.setOnClickListener{
-            navController.navigate(R.id.action_resultFragment2_to_viewAllFragment)
+            navController.navigate(R.id.action_resultFragment2_to_loginFragment)
         }
     }
 
