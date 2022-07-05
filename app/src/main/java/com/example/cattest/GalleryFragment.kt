@@ -89,9 +89,9 @@ class GalleryFragment : Fragment() {
         )
         items.add(
             GalleryContents(
-                "https://ko.wikipedia.org/wiki/리트리버",
+                "https://ko.wikipedia.org/wiki/골든_리트리버",
                 "https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/storypick/editor/2020062615503065168.jpg",
-                "리트리버"
+                "골든 리트리버"
             )
         )
         items.add(
@@ -171,7 +171,13 @@ class GalleryFragment : Fragment() {
                 "코커 스패니얼"
             )
         )
-
+        items.add(
+            GalleryContents(
+                "https://ko.wikipedia.org/wiki/래브라도_리트리버",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/YellowLabradorLooking_new.jpg/640px-YellowLabradorLooking_new.jpg",
+                "래브라도 리트리버"
+            )
+        )
         recyclerView?.adapter = RVAdapter
         RVAdapter.itemClick = object : RVAdapter.ItemClick{
             override fun onClick(view: View, position: Int) {
