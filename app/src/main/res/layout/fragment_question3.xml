@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/back"
     tools:context="fragment.QuestionFragment1">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/question3"
         android:textAlignment="center"
         android:textSize="29dp"
-        android:fontFamily="@font/bazzi"
+
+        app:layout_constraintBottom_toTopOf="@id/option3_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,29 +25,29 @@
         android:id="@+id/option3_1"
         android:layout_width="390dp"
         android:layout_height="120dp"
-        android:layout_marginTop="204dp"
-        android:background="@drawable/question"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bubble1"
         android:gravity="center"
         android:text="도서관에 가서 혼자 공부한다"
         android:textSize="30dp"
-        android:fontFamily="@font/bazzi"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@id/option3_2"
+        />
 
     <TextView
         android:id="@+id/option3_2"
         android:layout_width="390dp"
         android:layout_height="120dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/question"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bubble2"
         android:gravity="center"
         android:text="친구들과 함께 카페에서\n공부한다"
         android:textSize="30dp"
-        android:fontFamily="@font/bazzi"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/option3_1" />
 
@@ -55,18 +55,18 @@
         android:id="@+id/imageView"
         android:layout_width="350dp"
         android:layout_height="100dp"
-        android:layout_marginTop="524dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/loading3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/option3_2" />
 
     <ImageView
         android:id="@+id/back"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
@@ -77,7 +77,7 @@
         android:id="@+id/next"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.888"

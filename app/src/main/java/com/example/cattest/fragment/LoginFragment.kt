@@ -23,14 +23,10 @@ class LoginFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         navController = Navigation.findNavController(view)
 
-        //로그인 toast 띄우기
         send_btn.setOnClickListener{
-            Toast.makeText(getActivity(),"${ed_id.text} is logged in!!", Toast.LENGTH_SHORT).show()
             navController.navigate(R.id.action_loginFragment_to_questionFragment1)
-
         }
     }
 }
